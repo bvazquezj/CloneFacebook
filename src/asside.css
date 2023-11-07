@@ -1,0 +1,52 @@
+.log-text{
+    display: inline-block;
+    margin-right: 0;
+    vertical-align: top;
+    padding-right: 32px;    
+    
+}
+.log-text .image{
+    padding: 112px 0 16px;
+}
+
+img{
+    height: 106px;
+    margin: -28px;
+}
+
+h2{
+    margin: 0 32px 0 0;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 490px;
+    padding: 0 0 20px;
+    color: #1c1e21;
+}
+
+@media only screen and (max-width: 900px){
+    .log-text{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .log-text .image{
+        padding: 0 0 20px 0;
+    }
+    h2{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1075px){
+    .log-text{
+        width: 400px;
+        padding: 0;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 28px;
+        width: auto;
+    }
+}

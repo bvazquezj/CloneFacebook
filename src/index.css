@@ -1,0 +1,48 @@
+*{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+body{
+    overflow-y: scroll;
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    width: auto;
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    background-color: #f0f2f5;
+    
+}
+#root{
+    padding-bottom: 112px;
+    padding-top: 72px;
+}
+.principal{
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 980px; 
+}
+
+@media only screen and (max-width: 1075px){
+    .principal{
+        height: 496px;
+        margin: 0 40px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .principal{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #root{
+        padding-bottom: 164px;
+        padding-top: 20px;
+    }
+}
