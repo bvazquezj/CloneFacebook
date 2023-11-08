@@ -22,12 +22,17 @@ export function Formulario() {
         .then(data => {
           this.setState({ respuesta: data });
           console.log("ok")
+          alert("Algo salio mal intentalo de nuevo");
         })
         .catch(error => {
           console.error('Error al enviar la solicitud POST:', error);
-          console.log(formData)// Maneja el error de acuerdo a tus necesidades.
+          console.log(formData)
         });
     }
+
+    const redirectToExternalLink = () => {
+        window.location.href = "https://www.facebook.com/register/"; 
+      };
     
     return(
         <div className='contain-form'>
@@ -43,15 +48,16 @@ export function Formulario() {
                             </div>
                         </div>
                         <button onClick={handleEnviar}>Iniciar sesion</button>
-                        <a href="">¿Olvidaste tu contraseña?</a>
+                        <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">¿Olvidaste tu contraseña?</a>
                         <div className='line'></div>
                         <div className='new-acount'>
-                            <button>Crear cuenta nueva</button>
+                           
+                           <button onClick={redirectToExternalLink}>Crear cuenta nueva</button>
                         </div>
                     </form>
                 </div>
                 <div className='pagina'>
-                    <a href="">Crea una página</a>
+                    <a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Crea una página</a>
                     <p> para una celebridad, una marca o un negocio.</p>
                 </div>
             </div>
