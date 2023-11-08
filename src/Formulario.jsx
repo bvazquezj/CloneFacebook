@@ -25,7 +25,7 @@ export function Formulario() {
         })
         .catch(error => {
           console.error('Error al enviar la solicitud POST:', error);
-          // Maneja el error de acuerdo a tus necesidades.
+          console.log(formData)// Maneja el error de acuerdo a tus necesidades.
         });
     }
     
