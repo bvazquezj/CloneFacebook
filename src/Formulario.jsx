@@ -7,7 +7,7 @@ export function Formulario() {
 
     const handleEnviar = () =>{
         const formData = {
-            nane: name,
+            name: name,
             password: password
         };
 
